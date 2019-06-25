@@ -1,0 +1,22 @@
+Project 001
+
+Title: Make a basic website responsive
+
+Objective: Take John's currently existing website, which is a simple website made only of HTML and CSS, responsive to a resized screen, so that objects do not cover each other, and the aesthetic of the website is preserved. "Resized screen" is interchangeable with "viewed on a mobile device".
+
+Requirement 01
+Make John's website responsive, so that content does not overlap when the screen is resized. Ensure an equal margin width between content boxes when resized. The header and navigation area should remain in the order they are.
+
+-Requirement 01.1
+Home Page. Make the home page responsive to a resized screen. If possible, I'd like the welcome message to come before my picture and the credit to the Lord, when the window is resized.
+
+-Requirement 01.2
+Portfolio page. I'd like the pictures to come first when the window is resized, and the text that is now on the right would slide down below each picture as a caption. 
+
+-Requirement 01.3
+Briefcase. The documents summary squares should stack into a single column when the window is resized. 
+ -Requirement 01.3.1
+  The documents linked should already be responsive to screen resizing, so no change will be needed to those pages.
+
+-Requirement 01.4
+Contact me. When screen is resized to the point where the box with the contact information is obscured, the contact information should stack into one column.
