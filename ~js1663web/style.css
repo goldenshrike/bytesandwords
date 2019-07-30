@@ -74,22 +74,29 @@ body {
 /* Global */
 #copyright {
 	margin-top: 20px;
-	margin-left: 20px
+	margin-left: 20px;
 }
 
 /* Used in index*/
 #bigbox {
+	margin: auto;
+	margin-top: 20px;
 	border: 3px solid darkorange;
 	background: LightGoldenRodYellow;
 	border-radius: 5px;
 	padding: 2px;
-	position: absolute;
 	right: 25px;
-	width: 800px;
+	width: 65%;
 	height:370px;
 	padding: 3px;
 	text-align: Center;
 	font-family: consolas;
+	overflow: auto;
+}
+
+body section{
+	display: flex;
+	flex-direction: row-reverse;
 }
 /* Used in index */
 #bigbox p {
@@ -103,10 +110,10 @@ body {
 	background: LightGoldenRodYellow;
 	border-radius: 5px;
 	padding: 2px;
-	margin-top:20px;
-	margin-left: 20px;
-	width: 300px;
-	height:270px;
+	margin: auto;	
+	margin-top: 30px;
+	width: 25%;
+	height:350px;
 	padding: 3px;
 	text-align: Center;
 	font-family: consolas;
@@ -114,7 +121,11 @@ body {
 
 
 #profilepic {
-	padding: 20px;
+	margin: auto;
+	margin-top: 10px;
+	width: 95%; 
+	height: 75%;
+	overflow: auto;
 }
 
 /* Used in briefcase */
@@ -128,7 +139,37 @@ hr {
 }
 
 /* Used in briefcase */
-.file {
+.file_summary {
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	height: 300px;
+	width: 400px;
+	margin: 10px;
+}
+
+.file_resume {
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	height: 300px;
+	width: 400px;
+	margin: 10px;
+}
+
+.file_obj1 {
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	height: 300px;
+	width: 400px;
+	margin: 10px;
+}
+
+.file_obj2 {
 	border: 3px solid darkorange;
 	background: LightGoldenRodYellow;
 	border-radius: 5px;
@@ -150,10 +191,7 @@ hr {
 	margin-left: 50px;
 }
 
-/* Used in briefcase */
-#binder td {
-	font-family: consolas;
-}
+
 
 /* Used in briefcase */
 #binder p {
@@ -179,17 +217,30 @@ th {
 }
 
 .screenshot {
-	margin: 10px;
+	margin: auto;
+	margin-top: 5%;
 	border: 3px solid black;
 	border-radius: 3px;
-	height: 400px;
-	width: 400px;
+	height: 90%;
+	width: 90%;
+	
 }
 
+#cabinet img {
+	height: auto; /* Make sure images are scaled correctly. */
+	width: 100%; /* Adhere to container width. */
+	height: 100%;
+	display:block;
+}
+
+
 .reflection{
-	margin: 10px;
-	border-radius: 3px;
-	height: 400px;
+	margin: auto;
+	margin-top: 5%;
+	text-align: left;
+	word-wrap: break-word;
+	width: 90%;
+	height: 5%;
 }
 
 /* Used in portfolio */
@@ -197,8 +248,20 @@ th {
 	border: 3px solid darkorange;
 	background: LightGoldenRodYellow;
 	border-radius: 5px;
-	margin: 10px;
+	width: 900px;
+	margin: auto;
+	margin-left: 10px;
 	font-family: calibri, sans-serif;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas: 'station st_ref'
+						 'tutorials tut_ref'
+						 'pages pag_ref'
+						 'xforms xf_ref'
+						 'basecamp basec_ref'
+						 'offerings-page offp_ref'
+
 }
 
 #document {
@@ -206,6 +269,306 @@ th {
 	background: LightGoldenRodYellow;
 	border-radius: 5px;
 	margin-left: 15%;
+	width: 70%;
+	padding: 10px;
+	font-family: calibri, sans-serif;
+}
+
+.links{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/* used in contact*/
+
+#businesscard {
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	height: 200px;
+	width: 350px;
+	margin-left: 30%;
+	margin-top: 20px;
+	font-family: consolas, sans-serif;
+	padding: 10px;
+}
+
+#contacts {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'email cell'
+			   			'address number';
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+	/* Global */
+body {
+	background-color: #E0FFF0;	
+}
+
+/* Global */
+#Title {
+	margin-top:15px;
+	margin-left:25px;
+	font-family: Arial;
+}
+
+/* Global */
+#Subtitle {
+	margin: auto;
+	margin-top:15px;
+	margin-left:25px;
+	font-family: Arial;
+}
+
+/* Global */
+#level1 {
+	display: inline-block;
+	border: 2px solid salmon;
+	background: salmon;
+	padding: 2px;
+	width: 20%;
+	margin-left: -10px;
+	text-align: right;
+	font-family: Arial;
+	border-top-right-radius: 5px;
+}
+
+/* Global */
+#level2 {
+	border: 2px solid mediumaquamarine;
+	background: mediumaquamarine;
+	padding: 2px;
+	width: 35%;
+	margin-left: -10px;
+	text-align: right;
+	font-family: Arial;
+	border-top-right-radius: 5px;
+}
+
+/* Global */
+#level3	 {
+	border: 2px solid dodgerblue;
+	background: dodgerblue;
+	padding: 2px;
+	width: 50%;
+	margin-left: -10px;
+	margin-bottom: 0px;
+	text-align: right;
+	font-family: Arial;
+	border-top-right-radius: 5px;
+	
+}
+
+/* Global */
+#level4{
+	border: 2px solid orange;
+	background: orange;
+	padding: 2px;
+	width: 65%;
+	margin-left: -10px;
+	text-align: right;
+	font-family: Arial;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* Global */
+#copyright {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+/* Used in index*/
+#bigbox {
+	position: relative;
+	margin:auto;
+	right: unset !important;
+	margin-top: 30px;
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	width: 90%;
+	overflow: auto;
+	text-align: Center;
+	font-family: consolas;
+}
+
+body section{
+	display: flex;
+	flex-direction: column;
+}
+/* Used in index */
+#bigbox p {
+	text-align: left;
+	padding: 10px;
+}
+
+/* Used in index */
+#picture {
+	position:relative;
+	margin: auto;
+	width: 50%;
+	height: 400px;	
+	margin-left: auto !important;
+	margin-top:30px;
+}
+
+
+#profilepic {
+	margin: auto;
+	width: 95%; 
+	height: 75%;
+	overflow: auto;
+}
+
+
+#copyright {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+
+
+/* Used in briefcase */
+hr {
+	border: 1px solid black;
+	background-color: black;
+	border-radius: 2px;
+	height: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/* Used in briefcase */
+.filename {
+	padding-left: 15px;
+	font-family: consolas;
+}
+
+/* Used in briefcase */
+#binder {
+	margin: auto;	
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Used in briefcase */
+#binder p {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+.file_summary {
+	margin: 10px;
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	height: auto;
+	width: auto;
+	
+}
+
+.file_resume {
+	margin: 10px;
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	height: auto;
+	width: auto;
+}
+
+.file_obj1 {
+	margin: 10px;
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	height: auto;
+	width: auto;
+}
+
+.file_obj2 {
+	margin: 10px;
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	padding: 2px;
+	height: auto;
+	width: auto;
+}
+
+#pagesubtitle {
+	font-family: arial;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+
+#pagetitle {
+	font-family: arial;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.screenshot {
+	margin: auto;
+	margin-top: 5%;
+	border: 3px solid black;
+	border-radius: 3px;
+	height: 100%;
+	width: 90%;
+	
+}
+
+#cabinet img {
+	height: auto; /* Make sure images are scaled correctly. */
+	width: 100%; /* Adhere to container width. */
+	display:block;
+}
+
+
+.reflection{
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	border-radius: 3px;
+	text-align: left;
+	word-wrap: break-word;
+	width: 90%;
+	height: 5%;
+}
+
+/* Used in portfolio */
+
+#cabinet {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	margin: auto;
+	width: 95%;
+	font-family: calibri, sans-serif;
+}
+
+#document {
+	border: 3px solid darkorange;
+	background: LightGoldenRodYellow;
+	border-radius: 5px;
+	margin: auto;
 	width: 70%;
 	padding: 10px;
 	font-family: calibri, sans-serif;
@@ -221,4 +584,49 @@ th {
 	margin-top: 20px;
 	font-family: consolas, sans-serif;
 	padding: 10px;
+}
+
+/* used in contact */
+	#businesscard {
+		border: 3px solid darkorange;
+		background: LightGoldenRodYellow;
+		border-radius: 5px;
+		height: auto;
+		width: auto;
+		margin: auto;
+		margin-top: 50px;
+		font-family: consolas, sans-serif;
+		padding: 10px;
+	}
+
+	#contacts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.email {
+  		margin: auto;
+	}
+
+	.phone {
+		margin:auto;
+	}
+
+	.address{
+		margin:auto;
+	}
+
+	.cellphone{
+		margin:auto;
+	}
+
+	#businesscard h4
+	{
+		margin:auto;
+		text-align: center;
+	}
+	#businesscard p {
+		margin:auto;
+		text-align: center;
+	}
 }
